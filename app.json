@@ -2,7 +2,7 @@
   "name": "HYF Student Progress",
   "description": "Auto-refresh of test results",
   "repository": "https://github.com/nkuik/hyf-student-progress",
-  "keywords": ["elixir", "phoenix", "chat"],
+  "keywords": ["elixir", "phoenix"],
   "env": {
     "HOST": {
       "description": "The url of heroku app",
