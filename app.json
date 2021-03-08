@@ -8,6 +8,16 @@
       "description": "The url of heroku app",
       "value": "CHANGE-ME",
       "required": true
+    },
+    "DATABASE_URL": {
+        "description": "Database URL",
+        "value": "CHANGE-ME",
+        "required": false
+    },
+    "SECRET_KEY_BASE": {
+        "description": "Not used",
+        "value": "CHANGE-ME",
+        "required": false
     }
   },
   "stack": "heroku-18",
