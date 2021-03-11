@@ -13,7 +13,8 @@ config :hyf, HyfWeb.Endpoint,
   http: [port: {:system, "PORT"}],
   url: [scheme: "https", host: {:system, "HOST"}, port: 443],
   force_ssl: [rewrite_on: [:x_forwarded_proto]],
-  cache_static_manifest: "priv/static/cache_manifest.json"
+  cache_static_manifest: "priv/static/cache_manifest.json",
+  check_origin: false
 
 # Do not print debug messages in production
 config :logger, level: :info
