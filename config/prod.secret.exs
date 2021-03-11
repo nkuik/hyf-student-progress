@@ -11,6 +11,7 @@ config :hyf, Hyf.Repo,
   url: database_url,
   pool_size: String.to_integer(System.get_env("POOL_SIZE") || "10")
 
+# TODO: Check config for this in heroku
 secret_key_base = System.get_env("SECRET_KEY_BASE")
 
 config :hyf, HyfWeb.Endpoint,
