@@ -3,6 +3,6 @@ defmodule HyfWeb.TestController do
 
   def submit(conn, %{"name" => name, "data" => data}) do
     Hyf.Storage.put(name, data)
-    conn
+    resp(conn, 200, "")
   end
 end
