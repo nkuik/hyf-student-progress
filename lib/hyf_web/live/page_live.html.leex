@@ -3,5 +3,17 @@
 </section>
 
 <%= if assigns[:tests] do %>
-<%= inspect(@tests) %>
+<ul>
+  <%= for {name, result} <- @tests do %>
+    <li>
+      <strong><%= name %>:</strong>
+      <%= if not is_binary(result) do %>
+        Passed: <%= result[:passed_tests] || "" %>
+        Total: <%= result[:total_tests] || "" %>
+      <% else %>
+        Invalid result
+      <% end %>
+    </li>
+  <% end %>
+</ul>
 <% end %>
